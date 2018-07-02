@@ -2,7 +2,18 @@ var express = require('express');
 var router = express.Router();
 //const request = require('request');
 var axios = require('axios');
-//const fs = require('fs');
+
+//using request
+/* router.get('/', function(req, res){
+    request('http://jsonplaceholder.typicode.com/users/', function(error, rensponse, body){
+      if(!error && rensponse.statusCode == 200){
+          res.send(body);
+      }else{
+          res.send(404);
+      }
+    });
+
+}); */
 
 router.get("/", function(req, res)  { 
     axios({
